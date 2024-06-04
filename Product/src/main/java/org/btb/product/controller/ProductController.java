@@ -2,7 +2,7 @@ package org.btb.product.controller;
 
 
 import lombok.AllArgsConstructor;
-import org.btb.product.entity.Product;
+import org.btb.product.entities.Product;
 import org.btb.product.service.IProductService;
 import org.springframework.web.bind.annotation.*;
 
@@ -11,6 +11,7 @@ import java.util.List;
 @AllArgsConstructor
 @RestController
 @RequestMapping("/product")
+@CrossOrigin(origins = "*")
 public class ProductController {
 
     private IProductService iProductService;

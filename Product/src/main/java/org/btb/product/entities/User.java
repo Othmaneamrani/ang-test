@@ -1,4 +1,4 @@
-package org.btb.product.entity;
+package org.btb.product.entities;
 
 
 import jakarta.persistence.Entity;
@@ -8,21 +8,19 @@ import jakarta.persistence.Id;
 import lombok.*;
 
 @Entity
-@AllArgsConstructor
 @NoArgsConstructor
+@AllArgsConstructor
+@Builder
 @Getter
 @Setter
-@Builder
-public class Product {
+public class User {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
 
-    private String title;
+    private String username;
 
-    private int quantity;
-
-    private double price;
+    private String password;
 
 }

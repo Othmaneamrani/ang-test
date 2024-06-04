@@ -1,0 +1,100 @@
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(16, 10, 10, 0.7);
+  padding: 10px 20px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.navbar-container2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(16, 10, 10, 0.7);
+  padding: 10px 20px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.navbar {
+  display: flex;
+  padding: 5px;
+}
+
+
+.nav-link {
+  color: #fff;
+  text-decoration: none;
+  margin-right: 20px;
+  font-weight: bold;
+}
+
+.link{
+  color: #a77ae2;
+  text-decoration: none;
+  margin-right: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+
+.nav-link-active{
+  color: #a77ae2;
+  text-decoration: none;
+  margin-right: 20px;
+  font-weight: bold;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+}
+
+.form-inline {
+  display: flex;
+  align-items: center;
+}
+
+.input-group {
+  display: flex;
+  width: 100%;
+  max-width: 300px;
+}
+
+.form-control {
+  flex-grow: 1;
+  border-radius: 3px;
+}
+
+.btn {
+  background-color: #d046c7;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.btn:hover {
+  background-color: #a9116d;
+}
+
+.navbar-right {
+  display: flex;
+}
+
+.navbar-link {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 20px;
+  font-weight: bold;
+  padding: 7px 12px;
+}

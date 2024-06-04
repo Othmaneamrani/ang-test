@@ -1,1 +1,17 @@
-<p>navbar works!</p>
+<nav class="navbar-container" *ngIf="localStorage.getItem('log')" >
+    <div class="navbar">
+      <a  [ngClass]="{'nav-link' : !isActive('/home'), 'nav-link-active':isActive('/home')}" [routerLink]="['/home']" >Home</a>
+      <a routerLink="/catalogue" routerLinkActive="nav-link-active" class="nav-link">Catalogue</a>
+      <a  [ngClass]="{'nav-link':!isActive('/about'),'nav-link-active':isActive('/about') }" [routerLink]="['/about']" >About</a>
+    </div>
+
+    <div class="navbar-right">
+      <a [ngClass]="{'nav-link':!isActive('/'),'nav-link-active':isActive('/') }" [routerLink]="['/']" >name</a>
+    </div>
+</nav>
+
+<nav class="navbar-container2" *ngIf="!localStorage.getItem('log')" >
+  <div class="navbar">
+    <a class="link" >S'authentifier</a>
+  </div>
+</nav>

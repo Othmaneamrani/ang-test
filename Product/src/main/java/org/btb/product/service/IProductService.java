@@ -1,6 +1,6 @@
 package org.btb.product.service;
 
-import org.btb.product.entity.Product;
+import org.btb.product.entities.Product;
 
 import java.util.List;
 

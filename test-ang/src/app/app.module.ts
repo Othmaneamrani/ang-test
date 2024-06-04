@@ -9,6 +9,10 @@ import { UpdateComponent } from './update/update.component';
 import { DetailsComponent } from './details/details.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
+import { CatalogueComponent } from './catalogue/catalogue.component';
+import { AboutComponent } from './about/about.component';
+import { AuthComponent } from './auth/auth.component';
+import {provideHttpClient, withInterceptorsFromDi} from "@angular/common/http";
 
 @NgModule({
   declarations: [
@@ -18,13 +22,18 @@ import { FooterComponent } from './footer/footer.component';
     UpdateComponent,
     DetailsComponent,
     NavbarComponent,
-    FooterComponent
+    FooterComponent,
+    CatalogueComponent,
+    AboutComponent,
+    AuthComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [
+    provideHttpClient(withInterceptorsFromDi())
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
