@@ -8,6 +8,7 @@ import org.btb.product.repository.IUserRepository;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Optional;
 
 @AllArgsConstructor
 @Transactional
@@ -18,6 +19,10 @@ public class UserServiceImpl implements IUserService{
 
     @Override
     public User signUp(User user) {
+        Optional<User> byUsername = iUserRepository.findByUsername(user.getUsername());
+        if(byUsername.isPresent()){
+            throw new RuntimeException("Username already used.");
+        }
         return iUserRepository.save(user);
     }
 
