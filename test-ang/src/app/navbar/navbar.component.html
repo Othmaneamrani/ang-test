@@ -6,7 +6,7 @@
     </div>
 
     <div class="navbar-right">
-      <a [ngClass]="{'nav-link':!isActive('/'),'nav-link-active':isActive('/') }" [routerLink]="['/']" >name</a>
+      <button class="logout" (click)="logout()" >Logout</button>
     </div>
 </nav>
 

@@ -13,5 +13,11 @@ isActive(path:string):boolean{
   return this.router.url===path;
 }
 
+  logout():any{
+    localStorage.clear();
+    this.router.navigate(["/"]);
+  }
+
+
   protected readonly localStorage = localStorage;
 }

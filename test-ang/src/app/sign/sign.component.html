@@ -1,7 +1,7 @@
-<h1 class="titre-login">Login</h1>
+<h1 class="titre-login">Sign</h1>
 
 <div class="auth-container">
-  <form (ngSubmit)="handleLogin(user)" #loginForm="ngForm" >
+  <form (ngSubmit)="handleSign(user)" #loginForm="ngForm" >
     <div class="form-group">
       <label>Nom d'utilisateur</label>
       <input
@@ -22,9 +22,19 @@
         required>
     </div>
 
-    <button type="submit" class="btn btn-primary">Se connecter</button>
+    <div class="form-group">
+      <label>Confirmer mot de passe</label>
+      <input
+        type="password"
+        class="form-control"
+        [(ngModel)]="user.confirmPassword"
+        name="confirmPassword"
+        required>
+    </div>
+
+    <button type="submit" class="btn btn-primary">S'inscrire</button>
   </form>
 
-  <p [routerLink]="['/sign']" class="new-acc">Créer un nouveau compte</p>
+  <p [routerLink]="['/']" class="new-acc">Se connecter</p>
 
 </div>

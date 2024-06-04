@@ -13,6 +13,8 @@ import { CatalogueComponent } from './catalogue/catalogue.component';
 import { AboutComponent } from './about/about.component';
 import { AuthComponent } from './auth/auth.component';
 import {provideHttpClient, withInterceptorsFromDi} from "@angular/common/http";
+import {FormsModule} from "@angular/forms";
+import { SignComponent } from './sign/sign.component';
 
 @NgModule({
   declarations: [
@@ -25,11 +27,13 @@ import {provideHttpClient, withInterceptorsFromDi} from "@angular/common/http";
     FooterComponent,
     CatalogueComponent,
     AboutComponent,
-    AuthComponent
+    AuthComponent,
+    SignComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [
     provideHttpClient(withInterceptorsFromDi())
