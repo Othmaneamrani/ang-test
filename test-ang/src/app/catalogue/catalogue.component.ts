@@ -40,8 +40,13 @@ handleDeleteProduct(id:bigint):any{
 }
 
 
+  goToDetails(product: any): void {
+    this.router.navigate(['/details'], { state: { product } });
+  }
 
 
-
+  handleGoToUpdate(product: any): void {
+    this.router.navigate(['/update'], { state: { product } });
+  }
 
 }

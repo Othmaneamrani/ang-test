@@ -7,8 +7,8 @@
     <h2>{{ product.title}}</h2>
     <p>Quantity : {{ product.quantity}}</p>
     <p>Price: {{ product.price}}</p>
-    <button class="actions" (click)="router.navigate(['/details'])" >Details</button>
-    <button class="actions" (click)="router.navigate(['/update'])" >Update</button>
+    <button class="actions" (click)="goToDetails(product)" >Details</button>
+    <button class="actions" (click)="handleGoToUpdate(product)" >Update</button>
     <button class="actions" (click)="handleDeleteProduct(product.id)">Delete</button>
   </div>
 </div>
