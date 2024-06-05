@@ -1,1 +1,21 @@
-<p>catalogue works!</p>
+<div class="cata-container">
+
+<h1 class="titre-cata">Products</h1>
+
+<div  *ngIf="products.length > 0; else noProduct" >
+  <div *ngFor="let product of products" class="product-item" >
+    <h2>{{ product.title}}</h2>
+    <p>Quantity : {{ product.quantity}}</p>
+    <p>Price: {{ product.price}}</p>
+    <button class="actions" (click)="router.navigate(['/details'])" >Details</button>
+    <button class="actions" (click)="router.navigate(['/update'])" >Update</button>
+    <button class="actions" (click)="handleDeleteProduct(product.id)">Delete</button>
+  </div>
+</div>
+<ng-template #noProduct>
+  <p>No products available.</p>
+</ng-template>
+
+  <a (click)="router.navigate(['/create'])" class="new-prod">Ajouter un produit.</a>
+
+</div>

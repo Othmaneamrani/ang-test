@@ -1,0 +1,35 @@
+.cata-container{
+  margin-top: 70px;
+  margin-bottom: 20px;
+}
+
+
+.titre-cata{
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.product-item {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.product-item h2 {
+  margin: 0;
+  font-size: 1.5em;
+}
+
+.product-item p {
+  margin: 5px 0;
+}
+
+
+.new-prod{
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.actions{
+  cursor: pointer;
+}
