@@ -1,0 +1,41 @@
+.create-container{
+  margin-top: 70px;
+  margin-bottom: 20px;
+}
+
+.titre-new{
+  text-align: center;
+}
+
+
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-control {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.btn {
+  width: 100%;
+  padding: 10px;
+  font-weight: bold;
+  font-size: 15px;
+  border-radius: 5px;
+  border: 5px;
+  background-color: #e8e5e5;
+}
+
+
+.btn:hover{
+  background-color: #c2c1c1;
+}
